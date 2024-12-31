@@ -1,0 +1,417 @@
+@font-face {
+    font-family: neue;
+    src: url(assets/font/3856NeueMachina.woff2);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    cursor: none;
+    font-family: neue;
+}
+
+body{
+    overflow-x: hidden;
+    position: relative;
+    
+}
+
+a, button, .clickable {
+    cursor: url(assets/images/cursor-resized.png), pointer;  /* custom pointer for clickable elements */
+}
+
+/*cursor*/
+
+#small-cursor{
+    height: 20px;
+    width: 20px;
+    top: 10px;
+    left: 10px;
+    background-color: #B9FF66;
+    box-shadow: 2px 5px 10px yellow;
+    border-radius: 50%;
+    position: fixed;
+    font-size: 7px;
+    color: #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 9;
+}
+
+
+#overlay{
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+}
+
+#big-cursor {
+    position: fixed; /* Keep the big cursor fixed */
+    top:340px; /* Center it vertically */
+    left: -125px; /* Center it horizontally */
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    z-index: 1000; /* Make sure it's above other content */
+    opacity: 1; /* Initially hidden */
+}
+
+
+/*page 1*/
+
+section{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 100px;
+}
+
+.part2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+nav h1{
+    font-size: 50px;
+
+}
+
+nav h1 i{
+    rotate: 45deg;
+    display: inline-block;
+    font-size: 55px;
+}
+
+nav h4{
+    font-size: 25px;
+    font-weight: 500;
+    font-family: neue;
+}
+
+nav button{
+    padding: 22px 40px;
+    font-size: 22px;
+    background-color: transparent;
+    border-radius: 10px;
+    font-weight: 600;
+    border: 2px solid #000;
+    cursor: none;
+    
+}
+
+nav button:hover{
+    background-color: #000;
+    color: #fff;
+    box-shadow: 2px 2px 0px white inset;
+    
+}
+
+/* Page 1 body */
+
+.center{
+    padding: 40px 120px;
+    height: 80%;
+    width: 100%;
+    display: flex;
+}
+
+.center-part1{
+    height: 100%;
+    width: 44%;
+    position: relative;
+ 
+}
+
+.center-part1 h1{
+    font-size: 80px;
+    line-height: 1.2;
+    font-family: neue;
+    position: relative;
+}
+
+.center-part1 p{
+    font-size: 30px;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 35px;
+}
+
+.center-part1 button{
+    background-color: black;
+    color: #fff;
+    border-radius: 15px;
+    padding: 28px 40px;
+    font-size: 25px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
+
+.center-part2{
+    height: 100%;
+    width: 56%;
+    position: relative;
+}
+
+.center-part2 img{
+    position: absolute;
+    right: 0;
+    height: 100%;
+}
+
+/*Page1 Bottom */
+
+.section1bottom{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 300px 120px 100px 120px;
+}
+
+.section1bottom img{
+    position: relative;
+    width: fit-content;
+    height: 60px;
+    scale: 3;
+    aspect-ratio: 1;
+}
+
+/* Page 2*/
+
+.section2 .services{
+    margin-top: 400px;
+    padding: 80px 120px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 50px;
+}
+
+.services h3{
+    background-color: #B9FF66;
+    font-weight: 500;
+    padding: 5px 10px 3px 10px;
+    border-radius: 5px;
+    font-size: 60px;
+    font-family: neue;
+}
+
+.services p{
+    width: 40%;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.container{
+    min-height: 86vh;
+    width: 100%;
+    padding: 0px 80px 40px 80px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.elem{
+    flex-shrink: 0;
+    height: 370px;
+    width: 48%;
+    border: 3px solid black;
+    border-radius: 50px;
+    box-shadow: 0px 15px 0px black;
+    padding: 60px;
+    display: flex;
+    gap: 30px;
+}
+
+.elem-part1{
+    height: 100%;
+    width: 60%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.elem-part1 h2{
+    font-size: 40px;
+    font-family: neue;
+    width: 100%;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-weight: 500;
+    background-color: #B9FF66;
+}
+
+.elem-part1 h4{
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 500;
+    gap: 20px;
+}
+
+.elem-part1 h4 i {
+    padding: 20px;
+    background-color: black;
+    font-weight: 900;
+    color: white;
+    border-radius: 50%;
+}
+
+.black{
+    background-color: black;
+}
+
+.white{
+    background-color: white;
+}
+
+.elem-part2{
+    height: 100%;
+    width: 40%;
+}
+
+.elem-part2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.invert{
+    background-color: #fff;
+}
+
+.contact-us{
+    background-color: #F3F3F3;
+    margin: 100px 100px;
+    padding: 40px 70px;
+    border-radius: 50px;
+    width: 87%;
+    height: 40%;display: flex;
+}
+
+.contact-left{
+    width: 50%;
+    height: 100%;
+}
+
+.contact-left h2{
+    font-size: 30px;
+    font-family: neue;
+}
+
+.contact-left p{
+    padding: 30px 10px;
+}
+
+.contact-left button{
+    background-color: black;
+    color: white;
+    font-size: 25px;
+    padding: 20px 30px;
+    border-radius: 15px;
+    font-family: neue;
+    cursor: none;
+}
+
+.contact-right{
+    width: 50%;
+    height: 100%;
+}
+
+
+.contact-right img{
+    width: 100%;
+    height: 100%;
+    transform: scale(1.4);
+}
+
+.case-study{
+    padding: 0px 120px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 50px;
+}
+
+.case-study h3{
+    background-color: #B9FF66;
+    font-weight: 500;
+    padding: 5px 10px 3px 10px;
+    border-radius: 5px;
+    font-size: 60px;
+    font-family: neue;
+}
+
+.case-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.case-study p{
+    width: 50%;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.cases{
+    background-color: black;
+    margin: 80px 100px 100px 100px;
+    padding: 70px 70px;
+    border-radius: 50px;
+    width: 87%;
+    height: 60%;
+    display: flex;
+    flex: 1;
+    gap: 50px;
+}
+
+.case1, .case2{
+    border-right: 2px solid white;
+    padding-right: 50px;
+}
+
+.cases p{
+    color: white;
+}
+
+.cases h4{
+    display: flex;
+    padding: 20px 0px;
+    color: #B9FF66;
+    gap: 15px;
+    align-items: center;
+}
+
+.cases h4 i{
+    font-size: 30px;
+    font-weight: 100;
+}
+
+footer{
+    width: 100%;
+    height: 500px;
+    background-color: red;
+    position: relative;
+    margin-top: 1700px;
+}
