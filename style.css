@@ -86,7 +86,7 @@ a, button, .clickable {
     display: flex;
     text-align: center;
     align-items: center;
-    box-shadow: 2px 5px 20px white;
+    box-shadow: 5px 5px 20px white;
 }
 
 #big-cursor:hover .tooltip {
