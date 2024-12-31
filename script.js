@@ -14,10 +14,18 @@ body.addEventListener("mousemove", function(dets){
 
 let isMoving = false;
 
+bigCursor.addEventListener("mouseover", function(){
+
+})
+
 bigCursor.addEventListener("click", function () {
     if (!isMoving) { 
         isMoving = true;
         bigCursorMove();  
+        let tooltip = bigCursor.querySelector(".tooltip");
+    if (tooltip) {
+        tooltip.remove(); 
+    }
     }
 });
 
